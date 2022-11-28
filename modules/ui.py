@@ -1045,6 +1045,10 @@ def create_ui(wrap_gradio_gpu_call):
                 (seed_resize_from_h, "Seed resize from-2"),
                 (denoising_strength, "Denoising strength"),
                 (mask_blur, "Mask blur"),
+                (init_img_with_mask, "Inpaint image with mask"),
+                (init_img_inpaint, "Inpaint image without mask"),
+                (init_mask_inpaint, "Inpaint mask"),
+                (mask_mode, "Mask mode"),
                 *modules.scripts.scripts_img2img.infotext_fields
             ]
             parameters_copypaste.add_paste_fields("img2img", init_img, img2img_paste_fields)
